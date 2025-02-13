@@ -73,3 +73,25 @@ minusBtn.addEventListener('click',()=>{
     totalPrice = price*number;
     orderPrice.innerText = totalPrice.toLocaleString('ko-kr');
 })
+
+//======장바구니 팝업 js
+
+const cartPopup = document.querySelector('.cart_open_bg');
+const cartBtn = document.querySelector('#cart_btn');
+const shoppingBtn = document.querySelector('.cart_open_bg .link a');
+console.log(cartPopup, cartBtn, shoppingBtn);
+
+//1. 'cartPopup'초기값: 팝업 숨기기
+cartPopup.style.display = 'none';
+//2. 'cartBtn' 장바구니 클릭 시
+//3. 팝업 보이기
+cartBtn.addEventListener('click',()=>{
+    cartPopup.style.display = 'block';
+    document.body.style.overflow = 'hidden'; //화면세로로 짧게 할 시 스크롤없애기 안움직이게 하는법
+})
+//4.'shoppingBtn' 팝업 내 '쇼핑계속하기' 클릭 시
+//5. 팝업 숨기기
+shoppingBtn.addEventListener('click',()=>{
+    cartPopup.style.display ='none';
+    document.body.style.overflow = 'auto'; // auto 설정 시내용이 넘치면 스크롤 만들어지고 아니면 안만들어짐
+})
