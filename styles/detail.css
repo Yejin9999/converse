@@ -132,7 +132,7 @@ main .detail_wrap .detail4 {
     margin-bottom:100px;
     display:flex; justify-content:space-between;
 }
-main .detail_wrap .detail4 img {}
+main .detail_wrap .detail4 img {width:100%;}
 /* 디테일세번째네번째줄끝 */
 main .detail_wrap .caution {
     display:flex; justify-content:space-around;
