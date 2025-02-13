@@ -66,16 +66,29 @@ main .order_wrap .content .color .coloroption a {margin-right:15px;}
 main .order_wrap .content .color .coloroption a:last-child {margin:0;}
 main .order_wrap .content .color .coloroption a img {}
 /* 색상옵션끝 */
-main .order_wrap .content .size {background-color:pink; margin:40px 0;}
+main .order_wrap .content .size {margin:40px 0;}
 main .order_wrap .content .size dt {margin-bottom:15px;}
 main .order_wrap .content .size dd {}
-main .order_wrap .content .size dd .opt_btn {display:flex;}
-main .order_wrap .content .size dd .opt_btn li {}
+main .order_wrap .content .size dd .opt_btn { text-align:center; width:386px;}
+main .order_wrap .content .size dd .opt_btn li {
+    display:inline-block; padding:10px 15px;
+    border:1px solid #aaa;
+    margin-bottom:10px;
+}
+main .order_wrap .content .size dd .opt_btn li:nth-child(6),
+main .order_wrap .content .size dd .opt_btn li:nth-child(7),
+main .order_wrap .content .size dd .opt_btn li:nth-child(8),
+main .order_wrap .content .size dd .opt_btn li:nth-child(9),
+main .order_wrap .content .size dd .opt_btn li:nth-child(10),
+main .order_wrap .content .size dd .opt_btn li:nth-child(11),
+main .order_wrap .content .size dd .opt_btn li:nth-child(12) {margin:0;}
 main .order_wrap .content .size dd .opt_btn li a {}
 /* 사이즈옵션끝 */
 main .order_wrap .content .num {text-align:right;}
 main .order_wrap .content .num button {width:25px; height:25px;}
-main .order_wrap .content .num #product_num {border:1px solid #ccc; width:50px; border-radius:5px;}
+main .order_wrap .content .num #product_num {
+    text-align:center;
+    border:1px solid #ccc; width:50px; border-radius:5px;}
 /* 주문수량 끝*/
 main .order_wrap .content .order_price {
     display:flex; justify-content:space-between;
